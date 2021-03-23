@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comp5311 - Logon Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+    <% for(var i=0; i<JSdata.length; i++) {%>
+        <script type="text/javascript" charset="utf8" src="<%= JSdata[i] %>"></script>
+        <% } %>
+    <% for(var i=0; i<CSSdata.length; i++) {%>
+        <link rel="stylesheet" href="<%= CSSdata[i] %>">
+    <% } %>
+</head>
+
+<body>
+	<div class="container-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm"><span></div>
+				<div class="col-sm">
+					COMP5311 Demo page
+				</div>
+				<div class="col-sm"><span></div>
+		</div>
+		<div class="container">
+			<form id="logon-form1">
+				<div class="mb-3">
+					
+				</div>
+			  <div class="mb-3">
+				<label for="exampleInputUsername" class="form-label">Username</label>
+				<input class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp">
+				<div id="usernameHelp" class="form-text">We'll never share your usernmae with anyone else.</div>
+			  </div>
+			  <div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
+			  </div>
+			  <button type="submit" id="logon-btn-onclick" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+<% for(var i=0; i<myJSdata.length; i++) {%>
+    <script type="text/javascript" charset="utf8" src="<%= myJSdata[i] %>"></script>
+    <% } %>
+</html>

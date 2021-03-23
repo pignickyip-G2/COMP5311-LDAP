@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP5311 Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <% for(var i=0; i<JSdata.length; i++) {%>
+        <script type="text/javascript" charset="utf8" src="<%= JSdata[i] %>"></script>
+        <% } %>
+            <% for(var i=0; i<CSSdata.length; i++) {%>
+                <link rel="stylesheet" href="<%= CSSdata[i] %>">
+                <% } %>
+
+</head>
+
+<body>
+    <div class="container">
+       test
+    </div>
+</body>
+</html>

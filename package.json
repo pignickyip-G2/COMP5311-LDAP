@@ -1,0 +1,38 @@
+{
+    "name": "COMP5311",
+    "description": "COMP5311 Project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "startapp": "nodemon ./src/bin/www",
+        "run": "node ./src/bin/www"
+    },
+    "author": "Nick",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "eslint": "^5.4.0",
+        "express": "^4.16.3",
+        "fs": "0.0.1-security",
+        "joi": "^13.6.0",
+        "ldap-authentication": "^2.2.6",
+        "mongoose": "^5.2.8",
+        "mysql2": "^1.6.1",
+        "nodemon": "^1.18.3",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pignickyip-G2/comp5311.git"
+    },
+    "keywords": [
+        "COMP5311",
+        "IOS Design"
+    ],
+    "bugs": {
+        "url": "https://github.com/pignickyip-G2/comp5311/issues"
+    },
+    "homepage": "https://github.com/pignickyip-G2/comp5311#readme"
+}
